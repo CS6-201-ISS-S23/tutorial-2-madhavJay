@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial2</title>
+</head>
+<style>
+.centred{
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+.oltop {
+    list-style-position: inside;
+    padding-left:  0%;
+}
+li{
+    padding-bottom: 20px;
+}
+.hr1{
+    width: 50%;
+    color: gray;
+    background-color: gray;
+    opacity: 30%;
+    height: 1px;
+}
+.hr2{
+    width: 100px;
+    color: gray;
+    background-color: gray;
+}
+.CAT{
+    width: 500px;
+    height: 500px;
+    float: right;
+}
+.Nested{
+    list-style-type: upper-alpha;
+}
+.AlphaLi{
+    padding-bottom: 0px;
+}
+</style>
+<body>
+    <ol class="oltop">
+        <li>
+            Create a HTML page that displays the exact same output. Make sure you stick to standards, for example the &lt/br&gt tag should be close. Also check whether your tags are paired, for example there should be one &ltp&gt tag for every &ltp&gt tag
+        </li>
+        <li>
+            <b>This note in bold</b>
+        </li>
+        <br>
+        <br>
+        <li class="centred">
+           This is the first centred paragraph
+        </li>
+        <li>
+            This is the second paragraph. It appears on the left.
+        </li>
+        <li class="right">
+            This is the third paragraph. It appears on the right.
+        </li>
+        <h3>
+            <li>
+                This is a level 3 heading
+            </li>
+        </h3>
+        <h5>
+            <li class="right">
+                This is a level 5 heading
+            </li>
+        </h5>
+        <li>
+            Below is a horizontal line with 50% width with respect to the browser width.
+        </li>
+        <hr class="hr1">
+        <li>
+            Below is a horizontal line which is 100 pixels wide.
+        </li>
+        <hr class="hr2">
+        <img src="https://i.kym-cdn.com/photos/images/original/002/205/323/176.jpg" alt="CAT" class="CAT">
+        <li>
+            Now this is a little tough. The image is displayed on the right side and the text is displayed on the left side. This is done using the "img" tag here, but you can use other methods to achieve the same output. The image has to be 500 pixels wide.
+        </li>
+        <li>
+            <a href="https://www.google.com">Click here to go to Google</a>
+        </li>
+        <li>
+            Lists:
+            <br>
+            <br>
+            <ol class="Nested">
+                <li class="AlphaLi">Item 1</li>
+                <li class="AlphaLi">Item 2</li>
+                <ol style="list-style-type: upper-roman;">
+                    <li class="AlphaLi">Item 2.1</li>
+                    <li class="AlphaLi">Item 2.2</li>
+                    <li class="AlphaLi"><pre style="display: inline;font-family: 'Times New Roman', Times, serif ;font-size: 16px;">  1.Item 2.3.1
+        2.Item 2.3.2
+        3.Item 2.3.3</pre>    
+                    </li>
+                </ol>
+            </ol>
+            <ul style="list-style-type: disc;">
+                <li class="AlphaLi">
+                    Item 1
+                </li class="AlphaLi">
+                <li>
+                    Item 2
+                </li>
+                <ul style="list-style-type: circle;">
+                    <li class="AlphaLi">
+                        Item 2.1
+                    </li>
+                    <li class="AlphaLi">
+                        Item 2.2
+                    </li>
+                    <li class="AlphaLi"><pre style="display: inline;font-family: 'Times New Roman', Times, serif ;font-size: 16px;">   ■ Item 2.3.1
+         ■ Item 2.3.2
+         ■ Item 2.3.3</pre>
+                        <!-- <ul style="list-style-type: square;">
+                            <li class="AlphaLi">
+                                Item 2.3.1
+                            </li>
+                            <li class="AlphaLi">
+                                Item 2.3.2
+                            </li>
+                            <li class="AlphaLi">
+                                Item 2.3.3
+                            </li>
+                        </ul> -->
+                    </li>
+                </ul>
+            </ul>
+        </li>
+        <li>
+            Subscripts: K<sub>2</sub>SO<sub>4</sub>.Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub>.24H<sub>2</sub>O
+        </li>
+        <pre style="padding-top: 0px;padding-bottom: 0px;">
+            <li style="padding-left: 50px;">
+        This
+                    entire
+                                line
+                is
+                    written
+                            without     using
+        any
+                            special
+        character. Only one
+                                tag
+        can help do this.
+            </li>
+        </pre>
+        <li style="font-family: 'Times New Roman', Times, serif;font-size: 30px;font-weight: bold;"><b>This is written using the font "times" and is 30 pixels big.</b></li>
+        <li>Simple table <br><br><table style="border: solid 1px; "> 
+            <tr><th style="border: solid 1px;"><b>Column 1</b></th><th style="border: solid 1px;"><b>Column 2</b></th></tr>
+            <tr><td style="border: solid 1px;">1.1</td><td style="border: solid 1px;">1.2</td></tr>
+            <tr><td style="border: solid 1px;">2.1</td><td style="border:solid 1px;">2.2</td></tr>
+        </table>
+        </li>
+        <li>
+            Weird Table <br><br><table style="border: solid 1px;">
+                <tr><th rowspan="2" style="border: solid 1px;"><b><u>something</u></b></th><th style="border: solid 1px;"><b>something else</b></th><th style="background-color: black;border: solid 1px;color: white;">no idea</th></tr>
+                <td style="border:solid 1px;text-align: center;" colspan="2"><b>Its morbin time</b></td>
+            </table>
+        </li>
+        <div style="background-color: red;color: white;height: 18px;">
+            <li>
+                ADD some colors! This line has a red background and white foreground.
+            </li>
+        </div>
+    </ol>
+</body>
+</html>
